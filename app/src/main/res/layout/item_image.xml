@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginHorizontal="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivImageResultAnalyze"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_image"
+        app:layout_constraintBottom_toBottomOf="@id/ivImageResultAnalyze"
+        app:layout_constraintEnd_toEndOf="@id/ivImageResultAnalyze"
+        app:layout_constraintStart_toStartOf="@id/ivImageResultAnalyze"
+        app:layout_constraintTop_toTopOf="@id/ivImageResultAnalyze" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_view"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintBottom_toTopOf="@id/divider" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/tvAnalyzeTime"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintStart_toStartOf="@id/view" />
+
+    <TextView
+        android:id="@+id/tvAnalyzeTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="@string/analyze_date"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:text="@string/analyze_result"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_cancer"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toStartOf="@id/tv_score"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:text="@string/analyze_result"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_score"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_label" />
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/background_icon_delete"
+        android:contentDescription="@string/hapus"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
