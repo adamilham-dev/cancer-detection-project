@@ -37,8 +37,8 @@ ScanMe is an advanced Android application designed to assist in early cancer det
 ### 1. Clone the Repository
 
 ```bash
-$ git clone https://github.com/adamilham-dev/cancer-detection-project.git
-$ cd cancer-detection-project
+$ git clone https://github.com/adamilham-dev/cancer-detection-app-training.git
+$ cd cancer-detection-app-training
 ```
 
 ### 2. Configure TensorFlow Model
