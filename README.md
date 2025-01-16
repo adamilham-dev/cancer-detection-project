@@ -1,13 +1,13 @@
-# School Project: Cancer Detection App "ScanMe"
+# School Project: Skin Cancer Detection App "ScanMe"
 
-ScanMe is an advanced Android application designed to assist in early cancer detection using AI and machine learning. This app leverages TensorFlow for image analysis, Kotlin for seamless Android development, RoomDB for local data storage, and Jetpack Compose for a modern and intuitive user interface.
+ScanMe is an advanced Android application designed to assist in early skin cancer detection using AI and machine learning. This app leverages TensorFlow for image analysis, Kotlin for seamless Android development, RoomDB for local data storage, and Jetpack Compose for a modern and intuitive user interface.
 
 ---
 
 ## Main Features
 
-1. **Cancer Detection**
-   - Utilizes TensorFlow models to analyze medical images and identify potential signs of cancer.
+1. **Skin Cancer Detection**
+   - Utilizes TensorFlow models to analyze medical images and identify potential signs of skin cancer.
    - Provides a detailed report with a confidence score for the detected condition.
 
 2. **Patient Record Management**
@@ -26,7 +26,7 @@ ScanMe is an advanced Android application designed to assist in early cancer det
 ## Technologies Used
 
 - **Kotlin**: Primary language for Android development.
-- **TensorFlow**: Machine learning framework for cancer detection.
+- **TensorFlow**: Machine learning framework for skin cancer detection.
 - **RoomDB**: Database solution for storing patient data locally.
 - **Jetpack Compose**: Toolkit for building modern Android UIs.
 
@@ -38,7 +38,7 @@ ScanMe is an advanced Android application designed to assist in early cancer det
 
 ```bash
 $ git clone https://github.com/adamilham-dev/scanme-project.git
-$ cd my-cancerdetection-app
+$ cd my-skincancerdetection-app
 ```
 
 ### 2. Configure TensorFlow Model
