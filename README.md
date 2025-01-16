@@ -63,7 +63,7 @@ $ cd my-skincancerdetection-app
 ---
 
 ## External Documentation
-For detailed documentation, please refer to [this link](https://drive.google.com/file/d/1DhZVZs7IvPDUbuv-_shH7b5lXCibcnLw/view?usp=sharing).
+For detailed documentation, please refer to [this link](https://docs.google.com/document/d/1qy2OS-A1XH2OUx_lmRcalzuDrluDSWK1/edit?usp=sharing&ouid=115226517391123230270&rtpof=true&sd=true).
 
 ---
 
